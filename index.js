@@ -26,7 +26,4 @@ mongoose.connect(DB).then(() => {
 })
 
 // ROUTES
-
 app.use("/api/users", userRoute)
-
-module.exports = app
