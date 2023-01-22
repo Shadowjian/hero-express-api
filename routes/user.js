@@ -18,7 +18,9 @@ router.post("/join", async (req, res) => {
   const user = new User({
     userName: req.body.userName,
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
+    isHero: req.body.isHero,
+    address: req.body.address
   })
   try {
     const newUser = await user.save()
